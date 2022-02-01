@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00220BE127A9611900503EAD /* ProductConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00220BE027A9611900503EAD /* ProductConstants.swift */; };
 		00B21FA227A7F14A00869A4A /* EdvoraTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B21FA127A7F14A00869A4A /* EdvoraTestApp.swift */; };
-		00B21FA427A7F14A00869A4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B21FA327A7F14A00869A4A /* ContentView.swift */; };
+		00B21FA427A7F14A00869A4A /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B21FA327A7F14A00869A4A /* ProductView.swift */; };
 		00B21FA627A7F14C00869A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B21FA527A7F14C00869A4A /* Assets.xcassets */; };
 		00B21FA927A7F14C00869A4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B21FA827A7F14C00869A4A /* Preview Assets.xcassets */; };
+		00B21FBA27A7F6C200869A4A /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B21FB927A7F6C200869A4A /* ProductCardView.swift */; };
+		00CF14C627A848B000C864BD /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF14C527A848B000C864BD /* CustomDivider.swift */; };
+		00CF14C827A84E3A00C864BD /* ProductVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF14C727A84E3A00C864BD /* ProductVM.swift */; };
+		00CF14CA27A84EB800C864BD /* ProductListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF14C927A84EB800C864BD /* ProductListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00220BE027A9611900503EAD /* ProductConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductConstants.swift; sourceTree = "<group>"; };
 		00B21F9E27A7F14A00869A4A /* EdvoraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdvoraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B21FA127A7F14A00869A4A /* EdvoraTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraTestApp.swift; sourceTree = "<group>"; };
-		00B21FA327A7F14A00869A4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00B21FA327A7F14A00869A4A /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		00B21FA527A7F14C00869A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00B21FA827A7F14C00869A4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00B21FB927A7F6C200869A4A /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		00CF14C527A848B000C864BD /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
+		00CF14C727A84E3A00C864BD /* ProductVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVM.swift; sourceTree = "<group>"; };
+		00CF14C927A84EB800C864BD /* ProductListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,14 @@
 		00B21FA027A7F14A00869A4A /* EdvoraTest */ = {
 			isa = PBXGroup;
 			children = (
+				00B21FB827A7F38C00869A4A /* Resources */,
+				00B21FB727A7F37800869A4A /* Services */,
+				00B21FB627A7F34A00869A4A /* Repositories */,
+				00B21FB527A7F33900869A4A /* Interactors */,
+				00B21FB227A7F31300869A4A /* UI */,
+				00B21FB127A7F2F100869A4A /* Constants */,
+				00B21FAF27A7F2B800869A4A /* Model */,
 				00B21FA127A7F14A00869A4A /* EdvoraTestApp.swift */,
-				00B21FA327A7F14A00869A4A /* ContentView.swift */,
-				00B21FA527A7F14C00869A4A /* Assets.xcassets */,
 				00B21FA727A7F14C00869A4A /* Preview Content */,
 			);
 			path = EdvoraTest;
@@ -65,6 +80,78 @@
 				00B21FA827A7F14C00869A4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00B21FAF27A7F2B800869A4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00CF14C927A84EB800C864BD /* ProductListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00B21FB127A7F2F100869A4A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				00220BE027A9611900503EAD /* ProductConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		00B21FB227A7F31300869A4A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				00B21FB427A7F32A00869A4A /* Screens */,
+				00B21FB327A7F32000869A4A /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		00B21FB327A7F32000869A4A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				00B21FB927A7F6C200869A4A /* ProductCardView.swift */,
+				00CF14C527A848B000C864BD /* CustomDivider.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		00B21FB427A7F32A00869A4A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				00B21FA327A7F14A00869A4A /* ProductView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		00B21FB527A7F33900869A4A /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				00CF14C727A84E3A00C864BD /* ProductVM.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		00B21FB627A7F34A00869A4A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		00B21FB727A7F37800869A4A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		00B21FB827A7F38C00869A4A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00B21FA527A7F14C00869A4A /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B21FA427A7F14A00869A4A /* ContentView.swift in Sources */,
+				00CF14C827A84E3A00C864BD /* ProductVM.swift in Sources */,
+				00CF14C627A848B000C864BD /* CustomDivider.swift in Sources */,
+				00220BE127A9611900503EAD /* ProductConstants.swift in Sources */,
+				00B21FBA27A7F6C200869A4A /* ProductCardView.swift in Sources */,
+				00CF14CA27A84EB800C864BD /* ProductListModel.swift in Sources */,
+				00B21FA427A7F14A00869A4A /* ProductView.swift in Sources */,
 				00B21FA227A7F14A00869A4A /* EdvoraTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
